@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/apartment (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="/front/css/element.css">
+    <link rel="stylesheet" href="/front/css/modal.css">
+    <link rel="stylesheet" href="/front/css/style.css">
+    <title>My Apartment</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="headwrapper">
+            <span class="create" onclick="openModal()"> Create apartament</span>
+            <div class="search-container">
+                <input class="search" id="search" type="text" placeholder=" Search...">
+            </div>
+        </div>
+        <div class="sort">
+            
+        </div>
+        <!-- <button onclick="prepare()">Prepare</button> -->
+        <div class="displayzone">
+                
+            <!-- elements -->
+            
+        </div> 
+    </div>
+
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" data-close="true">&times;</span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-form">
+                <label for="place">Aprtament place:</label><br>
+                <input type="text" id="place" name="place" class="modal-form-field" placeholder="Input apartament place..."/><br><br>
+                
+                <label for="rooms">Apartament rooms :</label><br>
+                <input type="number" id="rooms" name="rooms" min="1" max="5" class="modal-form-field" placeholder="Input apartaments rooms between 1 & 5"/><br><br>
+                
+                <label for="area">Apartament area :</label><br>
+                <input type="number" id="area" name="area" class="modal-form-field" placeholder="Input apartaments area"/><br><br>
+                
+                <label for="floor">Apartament floor :</label><br>
+                <input type="number" id="floor" name="floor" class="modal-form-field" placeholder="Input apartaments floor"/><br><br>
+                
+                <label for="price">Apartament price :</label><br>
+                <input type="number" id="price" name="price" class="modal-form-field" placeholder="Input apartaments price"/><br><br> 
+                
+                <label for="file" id="label-select-img">Image URL:</label><br>
+                <input type="text" id="imgfile" name="imgfile"><br><br>
+                            
+                <button id="submit" onclick="addElementToLocalStorage()">Submit</button>
+                <button id="update">Update</button>
+            </div> 
+        </div>
+    </div>
+
+    <div class="footer"><p><b>&copy; 2024 My apartament (version Locale Storage). All Rights Reserved.</b></p></div>
+    
+    <!-- <script src="/back/modal.js "></script> -->
+    <script src="/back/element.js"></script>
+    <script src="/back/base.js"></script>
+    <script src="/back/filter.js"></script>
+
+</body>
+</html>

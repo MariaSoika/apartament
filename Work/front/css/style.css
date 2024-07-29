@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.headwrapper{
+    background-color:  #C39898;
+    height: 70px;
+    display: flex;
+    align-items: center; /* Центрування по вертикалі */
+    position: relative;
+}
+
+.create{
+    margin: 40px;
+    width: 700px;
+    color: #F1E5D1;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    cursor: pointer;
+}
+
+.search-container input[type=text] {
+    border: 1px solid #F1E5D1; 
+    align-items: center; 
+    font-size: 16px;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+.displayzone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.footer{
+    background-color:  #C39898;
+    color: #F1E5D1;
+    height: 70px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+}
